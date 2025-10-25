@@ -25,18 +25,18 @@ services:
       - env/mysql.env
     volumes:
       - ./dockerfiles/mysql:/var/lib/mysql
-
+  artisan:
+    build:
+      context: dockerfiles
+      dockerfile: php.Dockerfile
+    volumes:
+      - ./src:/var/www/laravel
+    entrypoint: ["php", "/var/www/laravel/artisan"]
+    
   # composer:
   #   build:
   #     context: dockerfiles
   #     dockerfile: composer.Dockerfile
   #   volumes:
   #     - ./src:/var/www/laravel
-  # artisan:
-  #   build:
-  #     context: dockerfiles
-  #     dockerfile: php.Dockerfile
-  #   volumes:
-  #     - ./src:/var/www/laravel
-  #   entrypoint: ["php", "/var/www/laravel/artisan"]
 
