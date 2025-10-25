@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+запустить в папке frontend
+### `npm install`
 
 ### `npm start`
 
@@ -14,7 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 запустить в папке backend
 
 ### `docker compose up`
-Api adress [http://localhost:8000/api]
 
 ### `docker compose run composer install`
 Установить зависимости
@@ -22,5 +22,7 @@ Api adress [http://localhost:8000/api]
 ### `docker compose exec php php artisan migrate`
 Накатить миграции
 
-### `docker compose exec php php artisan db:seed`
+### `docker compose exec php php artisan db:seed ArticlesTableSeeder`
 Заполнить таблицы фейковыми данными
+
+Api adress [http://localhost:8000/api]
