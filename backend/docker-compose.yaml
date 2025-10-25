@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   nginx:
     image: "nginx:stable-alpine"
@@ -25,18 +23,19 @@ services:
       - env/mysql.env
     volumes:
       - ./dockerfiles/mysql:/var/lib/mysql
-  artisan:
+  composer:
     build:
       context: dockerfiles
-      dockerfile: php.Dockerfile
+      dockerfile: composer.Dockerfile
     volumes:
       - ./src:/var/www/laravel
-    entrypoint: ["php", "/var/www/laravel/artisan"]
-    
-  # composer:
+      
+  # artisan:
   #   build:
   #     context: dockerfiles
-  #     dockerfile: composer.Dockerfile
+  #     dockerfile: php.Dockerfile
   #   volumes:
   #     - ./src:/var/www/laravel
+  #   entrypoint: ["php", "/var/www/laravel/artisan"]
+
 
