@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #007bff;
+  padding: 10px 10px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.form {
+  margin: 20px;
+}
+
+form > input {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+form > textarea {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.comments-section{
+  margin: 40px;
+}
+
+.comment-author{
+  flex: 0 0 10%; 
+  border-right: 1px solid teal;
+}
+
+.comment-date{
+  flex: 0 0 10%;
+  border-right: 1px solid teal;
+}
+
+.comment-content {
+  flex: 0 0 80%; 
+  padding: 5px;
+}
+.comment-form {
+  margin-top: 20px;
+}
+.comment {
+		display: flex;
+    flex: 5 3 auto;
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+.card {
+		display: flex;
+    flex: 5 3 auto;
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.createdAt {
+  flex: 0 0 10%; 
+  border-right: 1px solid teal;
+
+}
+
+.title {
+  flex: 0 0 25%; 
+  border-right: 1px solid teal;
+
+}
+
+.content {
+  flex: 0 0 65%; 
+  padding: 5px;
+
+}
